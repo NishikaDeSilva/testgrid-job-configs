@@ -30,6 +30,7 @@ infrastructureConfig:
             ProductName: "wso2am"
             ProductVersion: "3.2.0"
             AMI: ami-0a242909f837c2156
+            ProductPackLocation: "https://wso2.org/jenkins/view/products/job/products/job/product-apim/lastStableBuild/org.wso2.am$wso2am/artifact/org.wso2.am/wso2am/3.2.0-SNAPSHOT/wso2am-3.2.0-SNAPSHOT.zip"
 scenarioConfigs:
   - testType: TESTNG
     remoteRepository: "https://github.com/NishikaDeSilva/testgrid"
@@ -42,4 +43,3 @@ scenarioConfigs:
       PRODUCT_GIT_BRANCH: "master"
       keyFileLocation: "/testgrid/testgrid-home/testgrid-key.pem"
       test_script_url: "https://raw.githubusercontent.com/NishikaDeSilva/apim-test-integration/3.2.0/run-int-test.sh"
-      ProductPackLocation: "https://wso2.org/jenkins/view/products/job/products/job/product-apim/lastStableBuild/org.wso2.am$wso2am/artifact/org.wso2.am/wso2am/3.2.0-SNAPSHOT/wso2am-3.2.0-SNAPSHOT.zip"
