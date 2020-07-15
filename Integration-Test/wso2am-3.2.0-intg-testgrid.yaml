@@ -8,6 +8,8 @@ infrastructureConfig:
   containerOrchestrationEngine: None
   includes:
     - ADOPT_OPEN_JDK8
+    - OracleJDK-8
+    - CorrettoJDK-8
     # - CentOS-7.5
     - Ubuntu-16.04
     - MySQL-5.7
