@@ -8,13 +8,13 @@ infrastructureConfig:
   containerOrchestrationEngine: None
   includes:
     # - ADOPT_OPEN_JDK11
-    # - ADOPT_OPEN_JDK8
-    # - Ubuntu-16.04
+    - ADOPT_OPEN_JDK8
+    - Ubuntu-16.04
     - OracleJDK-8
-    - CorrettoJDK-8
-    - RHEL-7.4
+    # - CorrettoJDK-8
+    # - RHEL-7.4
     # - CentOS-7.5
-    - MySQL-5.7
+    # - MySQL-5.7
   provisioners:
     - name: prod-wso2mi-intg-deployment
       remoteRepository: "https://github.com/NishikaDeSilva/testgrid"
