@@ -12,9 +12,9 @@ infrastructureConfig:
     # - OracleJDK-8
     - CorrettoJDK-8
     # - CentOS-7.5
-    # - RHEL-7.4
+    - RHEL-7.4
     # - Ubuntu-16.04
-    - SUSE-Linux-12
+    # - SUSE-Linux-12
     - MySQL-5.7
     # - Oracle-SE2-19.0
     # - SQLServer-SE-14.00
