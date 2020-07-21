@@ -9,7 +9,8 @@ infrastructureConfig:
   includes:
     # - ADOPT_OPEN_JDK11
     - ADOPT_OPEN_JDK8
-    - Ubuntu-16.04
+    # - Ubuntu-16.04
+    - SUSE-Linux-12
     # - Oracle-SE2-19.0
     # - OracleJDK-8
     # - CorrettoJDK-8
