@@ -36,7 +36,7 @@ infrastructureConfig:
             ALBCertificateARN: "arn:aws:acm:us-east-1:809489900555:certificate/2ab5aded-5df1-4549-9f7e-91639ff6634e"
             ProductName: "wso2mi"
             ProductVersion: "1.2.0"
-            ProductPackLocation: "https://wso2.org/jenkins/job/products/job/micro-integrator/lastSuccessfulBuild/artifact/distribution/target/wso2mi-1.2.0-SNAPSHOT.zip"
+            ProductPackLocation: "https://wso2.org/jenkins/job/products/job/micro-integrator/713/artifact/distribution/target/wso2mi-1.2.0.zip"
 scenarioConfigs:
   - testType: TESTNG
     remoteRepository: "https://github.com/NishikaDeSilva/testgrid"
