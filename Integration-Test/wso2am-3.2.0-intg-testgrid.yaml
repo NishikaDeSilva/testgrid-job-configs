@@ -21,12 +21,13 @@ infrastructureConfig:
   provisioners:
     - name: prod-wso2am-intg-deployment
       remoteRepository: "https://github.com/NishikaDeSilva/testgrid"
+      remoteBranch: restructure
       description: Provision Infra for running intg tests
       scripts:
         - name: 'prod-wso2am-intg-deployment'
           description: ''
           type: CLOUDFORMATION
-          file: jobs/intg-test-resources/latest/wso2-intg-test-cfn-pre-release.yaml
+          file: jobs/intg-test-resources/master-branch-releases/wso2-master-intg-test-cfn.yaml
           inputParameters:
             parseInfrastructureScript: false
             region: us-east-1
@@ -41,9 +42,10 @@ infrastructureConfig:
 scenarioConfigs:
   - testType: TESTNG
     remoteRepository: "https://github.com/NishikaDeSilva/testgrid"
+    remoteBranch: restructure
     name: integration-tests
     description: "integration tests"
-    file: jobs/intg-test-resources/latest/copy_script.sh
+    file: jobs/intg-test-resources/master-branch-releases/run-test.sh
     inputParameters:
       WSO2_PRODUCT: "wso2am-3.2.0"
       PRODUCT_GIT_URL: "https://github.com/wso2/product-apim.git"
