@@ -51,5 +51,4 @@ scenarioConfigs:
       PRODUCT_GIT_URL: "https://github.com/wso2/product-apim.git"
       PRODUCT_GIT_BRANCH: "master"
       keyFileLocation: "/testgrid/testgrid-home/testgrid-key.pem"
-      TEST_SCRIPT_URL: "https://github.com/NishikaDeSilva/apim-test-integration"
-      TEST_SCRIPT_BRANCH: "3.2.0"
+      TEST_SCRIPT_URL: "https://raw.githubusercontent.com/NishikaDeSilva/apim-test-integration/3.2.0/run-int-test.sh"
