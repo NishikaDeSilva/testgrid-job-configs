@@ -12,7 +12,7 @@ infrastructureConfig:
     - MySQL-5.7
   provisioners:
     - name: prod-wso2mi-intg-deployment
-      remoteRepository: "https://github.com/wso2/testgrid"
+      remoteRepository: "https://github.com/NishikaDeSilva/testgrid"
       remoteBranch: master
       description: Provision Infra for running intg tests
       scripts:
@@ -30,7 +30,7 @@ infrastructureConfig:
             ProductVersion: "1.1.0"
 scenarioConfigs:
   - testType: TESTNG
-    remoteRepository: "https://github.com/wso2/testgrid"
+    remoteRepository: "https://github.com/NishikaDeSilva/testgrid"
     remoteBranch: master
     name: integration-tests
     description: "integration tests"
@@ -40,4 +40,4 @@ scenarioConfigs:
       PRODUCT_GIT_URL: "https://github.com/wso2/micro-integrator.git"
       PRODUCT_GIT_BRANCH: "master"
       keyFileLocation: "/testgrid/testgrid-home/testgrid-key.pem"
-      TEST_SCRIPT_URL: "https://raw.githubusercontent.com/wso2/ei-test-integration/mi-1.1.0/wum-releases/run-int-test.sh"
+      TEST_SCRIPT_URL: "https://raw.githubusercontent.com/NishikaDeSilva/ei-test-integration/mi-1.1.0/wum-releases/run-int-test.sh"
