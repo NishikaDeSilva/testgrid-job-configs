@@ -39,7 +39,7 @@ scenarioConfigs:
     file: jobs/intg-test-resources/wum-releases/run-test.sh
     inputParameters:
       WSO2_PRODUCT: "wso2mi-1.1.0"
-      PRODUCT_GIT_URL: "https://github.com/wso2/micro-integrator.git"
+      PRODUCT_GIT_URL: "https://github.com/wso2-support/micro-integrator.git"
       PRODUCT_GIT_BRANCH: "support-1.1.0"
       keyFileLocation: "/testgrid/testgrid-home/testgrid-key.pem"
       TEST_SCRIPT_URL: "https://raw.githubusercontent.com/NishikaDeSilva/ei-test-integration/mi-1.1.0/wum-releases/run-int-test.sh"
