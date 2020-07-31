@@ -8,19 +8,20 @@ infrastructureConfig:
   containerOrchestrationEngine: None
   includes:
     - ADOPT_OPEN_JDK11
-    - ADOPT_OPEN_JDK8
-    - OracleJDK-8
-    - CorrettoJDK-8
+    # - ADOPT_OPEN_JDK8
+    # - OracleJDK-8
+    # - CorrettoJDK-8
     - CentOS-7.5
-    - RHEL-7.4
-    - Ubuntu-16.04
-    - SUSE-Linux-12
+    - Postgres-10.5
+    # - RHEL-7.4
+    # - Ubuntu-16.04
+    # - SUSE-Linux-12
     - MySQL-5.7
     - Oracle-SE2-19.0
     - SQLServer-SE-14.00
   provisioners:
     - name: prod-wso2am-intg-deployment
-      remoteRepository: "https://github.com/wso2/testgrid"
+      remoteRepository: "https://github.com/NishikaDeSilva/testgrid"
       remoteBranch: master
       description: Provision Infra for running intg tests
       scripts:
@@ -38,10 +39,10 @@ infrastructureConfig:
             ALBCertificateARN: "arn:aws:acm:us-east-1:809489900555:certificate/2ab5aded-5df1-4549-9f7e-91639ff6634e"
             ProductName: "wso2am"
             ProductVersion: "3.2.0"
-            ProductPackLocation: "https://wso2.org/jenkins/view/products/job/products/job/product-apim/lastStableBuild/org.wso2.am$wso2am/artifact/org.wso2.am/wso2am/3.2.0-SNAPSHOT/wso2am-3.2.0-SNAPSHOT.zip"
+            ProductPackLocation: "https://wso2.org/jenkins/view/products/job/products/job/product-apim/1863/org.wso2.am$wso2am/artifact/org.wso2.am/wso2am/3.2.0-SNAPSHOT/wso2am-3.2.0-SNAPSHOT.zip"
 scenarioConfigs:
   - testType: TESTNG
-    remoteRepository: "https://github.com/wso2/testgrid"
+    remoteRepository: "https://github.com/NishikaDeSilva/testgrid"
     remoteBranch: master
     name: integration-tests
     description: "integration tests"
@@ -51,4 +52,4 @@ scenarioConfigs:
       PRODUCT_GIT_URL: "https://github.com/wso2/product-apim.git"
       PRODUCT_GIT_BRANCH: "master"
       keyFileLocation: "/testgrid/testgrid-home/testgrid-key.pem"
-      TEST_SCRIPT_URL: "https://raw.githubusercontent.com/wso2/apim-test-integration/3.2.0/run-int-test.sh"
+      TEST_SCRIPT_URL: "https://raw.githubusercontent.com/NishikaDeSilva/apim-test-integration/3.2.0/run-int-test.sh"
