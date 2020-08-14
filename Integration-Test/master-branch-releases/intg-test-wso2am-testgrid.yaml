@@ -53,4 +53,4 @@ scenarioConfigs:
       PRODUCT_GIT_BRANCH: "master"
       keyFileLocation: "/testgrid/testgrid-home/testgrid-key.pem"
       TEST_SCRIPT_URL: "https://raw.githubusercontent.com/NishikaDeSilva/apim-test-integration/3.2.0/run-int-test.sh"
-      surefire_report_dir: "modules/integration/tests-integration/tests-backend/target/surefire-reports"
+      surefire_report_dir: "modules/integration/tests-integration/tests-backend/target"
